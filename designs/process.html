@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Fragments — The Process</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    /* ── Process page-specific ── */
+    .process-hero-img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .split-image {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      border-radius: var(--radius);
+    }
+
+    .split-text { display: flex; flex-direction: column; justify-content: center; gap: 18px; }
+    .split-text .label { display: inline-block; }
+    .split-text p { font-size: 15px; color: var(--stone); line-height: 1.8; font-weight: 300; }
+
+    /* 3-col image strip */
+    .img-strip-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+    }
+    .img-strip-3 img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    /* CTA section */
+    .cta-dark {
+      background: var(--ink);
+      padding: 96px 40px;
+      text-align: center;
+    }
+    .cta-dark-title {
+      font-family: var(--font-serif);
+      font-size: clamp(26px, 3.5vw, 42px);
+      font-style: italic;
+      color: var(--paper);
+      margin-bottom: 14px;
+      font-weight: 400;
+    }
+    .cta-dark-body {
+      font-size: 15px;
+      color: rgba(255,255,255,0.45);
+      margin-bottom: 32px;
+      font-weight: 300;
+    }
+
+    @media (max-width: 768px) {
+      .process-hero-img {
+        aspect-ratio: 4 / 3;
+      }
+      .split-image {
+        aspect-ratio: 3 / 2;
+      }
+      .img-strip-3 {
+        grid-template-columns: 1fr;
+      }
+      .cta-dark {
+        padding: 64px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav">
+    <a href="index.html" class="nav-logo">Urban Fragments <span>by Jasmine Hila Studios</span></a>
+    <ul class="nav-links">
+      <li><a href="collections.html">Shop</a></li>
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="process.html" class="active">Process</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="#">Search</a>
+      <a href="#" class="nav-cart">Bag <span class="cart-count">0</span></a>
+    </div>
+    <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="nav-drawer">
+    <a href="collections.html">Shop</a>
+    <a href="collections.html">Collections</a>
+    <a href="about.html">About</a>
+    <a href="process.html">Process</a>
+    <a href="contact.html">Contact</a>
+    <div class="nav-drawer-sub"><a href="#">Search</a><a href="#" class="nav-cart">Bag (0)</a></div>
+  </div>
+
+  <!-- 1. Page hero -->
+  <section class="page-hero section-linen">
+    <p class="label label-centered">How it's made</p>
+    <h1>From wall<br><em>to wrist.</em></h1>
+    <p>Each piece of Urban Fragments jewellery begins with a wall that is about to disappear.</p>
+  </section>
+
+  <!-- 2. Full-width hero image -->
+  <img
+    src="assets/img/DSC04628.JPG"
+    alt="Hands resting on a painted graffiti mural"
+    class="process-hero-img"
+  >
+
+  <!-- 3. Process steps -->
+  <section class="section">
+    <div class="container-sm">
+      <div class="process-steps">
+
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Document</h3>
+            <p>We identify walls across European cities that are scheduled for demolition or repainting. Before a single fragment is removed, we document the full surface — photography, artist details where known, location and date. Every wall has a record.</p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Reclaim</h3>
+            <p>Working with property owners and, where possible, the original artists, we carefully remove sections of the painted surface. The paint layer is preserved in its original state. Nothing is added, cleaned, or altered.</p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Cut &amp; set</h3>
+            <p>Back in the studio, each fragment is evaluated individually. We cut it to shape, taking care to preserve the most expressive areas of paint. The piece is then set by hand into sterling silver — sometimes gold-plated — to create a wearable form. No two cuts are the same.</p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3>Document &amp; certificate</h3>
+            <p>Before leaving the studio, each piece is photographed and catalogued. Every item ships with a certificate of origin: the wall it came from, the city, the year, and the artist's name where we have it. You're not just buying jewellery — you're buying a documented fragment of urban history.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Split section — text left, image right (linen bg) -->
+  <section class="section section-linen">
+    <div class="container">
+      <div class="split-2">
+        <div class="split-text">
+          <p class="label label-rule">The material</p>
+          <h2>Real paint.<br><em>Real walls.</em></h2>
+          <p>The fragments we work with are not reproductions. They are sections cut from actual painted concrete and brick walls — surfaces that were once visible to anyone walking past. The colours, textures, and layering you see on the jewellery are exactly as they appeared on the wall. We don't touch them. We don't add to them. The material does the work.</p>
+          <div>
+            <a href="collections.html" class="link-underline">See the collection →</a>
+          </div>
+        </div>
+        <div>
+          <img
+            src="assets/img/DSC_4955.jpg"
+            alt="Close-up detail of Urban Fragments pieces worn by a couple"
+            class="split-image"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Split section — image left, text right (white bg) -->
+  <section class="section">
+    <div class="container">
+      <div class="split-2">
+        <div>
+          <img
+            src="assets/img/DSC_4870.jpg"
+            alt="Woman portrait wearing turquoise Urban Fragments jewellery"
+            class="split-image"
+          >
+        </div>
+        <div class="split-text">
+          <p class="label label-rule">Why it matters</p>
+          <h2>Art that would<br>otherwise<br><em>disappear.</em></h2>
+          <p>Cities change. Murals get painted over. Buildings come down. Most street art is temporary by nature — appreciated in passing, then gone. Urban Fragments is a small act of preservation. We can't save every wall. But we can save a piece of it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Cities strip -->
+  <div class="cities-strip">
+    <div class="cities-strip-label">Collected in</div>
+    <div class="cities-strip-items">
+      <span>Basel</span>
+      <span>Berlin</span>
+      <span>Cologne</span>
+      <span>Ibiza</span>
+      <span>Leipzig</span>
+      <span>Lisbon</span>
+      <span>Luzern</span>
+      <span>Nuremberg</span>
+      <span>Vienna</span>
+      <span>Zürich</span>
+    </div>
+  </div>
+
+  <!-- 7. 3-column image strip -->
+  <div class="img-strip-3">
+    <img src="assets/img/DSC04308.JPG" alt="Ring photographed against an orange wall">
+    <img src="assets/img/DSC04288.JPG" alt="Ring photographed against a blue wall">
+    <img src="assets/img/DSC_5086.jpg" alt="Ring against a yellow and red mural">
+  </div>
+
+  <!-- 8. CTA section -->
+  <section class="cta-dark">
+    <p class="cta-dark-title">See where the walls came from.</p>
+    <p class="cta-dark-body">Every piece in the collection comes with its origin. Browse available fragments.</p>
+    <a href="collections.html" class="btn-light">Shop all pieces →</a>
+  </section>
+
+  <!-- 9. Newsletter -->
+  <section class="newsletter-section">
+    <p class="newsletter-label">Stay in the loop</p>
+    <p class="newsletter-title">New walls. New pieces.</p>
+    <p class="newsletter-body">Be the first to hear when a new collection drops.<br>We send infrequently and only when it's worth it.</p>
+    <form class="newsletter-form" onsubmit="return false;">
+      <input type="email" class="newsletter-input" placeholder="Your email address">
+      <button type="submit" class="newsletter-submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- 10. Footer -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Urban Fragments</div>
+        <p class="footer-brand-desc">One-of-one jewellery made from reclaimed graffiti walls. A collection by Jasmine Hila Studios.</p>
+        <div class="footer-social"><a href="#">Instagram</a><a href="#">Pinterest</a></div>
+      </div>
+      <div>
+        <div class="footer-col-title">Shop</div>
+        <ul class="footer-links">
+          <li><a href="collections.html">All pieces</a></li>
+          <li><a href="collections.html">Rings</a></li>
+          <li><a href="collections.html">Collar clips</a></li>
+          <li><a href="collections.html">Sold archive</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Information</div>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="process.html">The process</a></li>
+          <li><a href="contact.html">Stockists</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Help</div>
+        <ul class="footer-links">
+          <li><a href="shipping.html">Shipping &amp; returns</a></li>
+          <li><a href="#">Care guide</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="terms.html">Terms &amp; privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Jasmine Hila Studios. All rights reserved.</span>
+      <span>Powered by Shopify</span>
+    </div>
+  </footer>
+
+  <script src="assets/nav.js"></script>
+</body>
+</html>

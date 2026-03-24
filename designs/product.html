@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Urban Fragments — U|F vie004 Vienna Turquoise Necklace</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .product-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+  .product-gallery { position: sticky; top: calc(var(--nav-h) + 20px); }
+  .product-main-img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: top; border-radius: var(--radius); display: block; background: var(--sand); }
+  .thumbs { display: flex; gap: 8px; margin-top: 10px; }
+  .thumb-btn { width: 76px; height: 76px; border: 2px solid transparent; border-radius: var(--radius); overflow: hidden; padding: 0; background: var(--linen); cursor: pointer; flex-shrink: 0; transition: border-color 0.15s; }
+  .thumb-btn img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .thumb-btn.active { border-color: var(--ink); }
+  .product-info { padding-top: 4px; }
+  .product-eyebrow { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--pebble); margin-bottom: 12px; }
+  .product-title { font-family: var(--font-serif); font-size: 38px; font-weight: 600; color: var(--ink); line-height: 1.1; margin-bottom: 4px; }
+  .product-subtitle { font-family: var(--font-serif); font-size: 18px; font-style: italic; color: var(--stone); margin-bottom: 20px; }
+  .product-price-lg { font-size: 24px; color: var(--ink); font-weight: 400; margin-bottom: 20px; }
+  .detail-row { display: flex; gap: 16px; padding: 11px 0; border-bottom: 1px solid var(--line); font-size: 13.5px; }
+  .detail-label { color: var(--stone); min-width: 130px; flex-shrink: 0; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; padding-top: 2px; }
+  .detail-val { color: var(--ink); font-weight: 300; }
+  .origin-tag { display: inline-block; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid var(--line-md); padding: 6px 14px; border-radius: var(--radius); color: var(--stone); margin-top: 16px; }
+  .note-small { font-size: 12px; font-style: italic; color: var(--pebble); margin-top: 10px; }
+  @media (max-width: 768px) {
+    .product-layout { grid-template-columns: 1fr; gap: 32px; }
+    .product-gallery { position: static; }
+    .thumb-btn { width: 64px; height: 64px; }
+    .product-title { font-size: 30px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="announcement"><strong>New drop —</strong> Fragment No. 014–018 now available.</div>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo">Urban Fragments <span>by Jasmine Hila Studios</span></a>
+  <ul class="nav-links">
+    <li><a href="collections.html" class="active">Shop</a></li>
+    <li><a href="collections.html">Collections</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="process.html">Process</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="#">Search</a>
+    <a href="#" class="nav-cart">Bag <span class="cart-count">0</span></a>
+  </div>
+  <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav-drawer">
+  <a href="collections.html">Shop</a>
+  <a href="collections.html">Collections</a>
+  <a href="about.html">About</a>
+  <a href="process.html">Process</a>
+  <a href="contact.html">Contact</a>
+  <div class="nav-drawer-sub"><a href="#">Search</a><a href="#" class="nav-cart">Bag (0)</a></div>
+</div>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="index.html">Home</a>
+  <span class="breadcrumb-sep">›</span>
+  <a href="collections.html">Shop</a>
+  <span class="breadcrumb-sep">›</span>
+  <a href="collections.html">Necklaces</a>
+  <span class="breadcrumb-sep">›</span>
+  <span>U|F vie004</span>
+</div>
+
+<!-- MAIN PRODUCT -->
+<div class="section" style="background:var(--white);">
+  <div class="product-layout">
+
+    <!-- Gallery -->
+    <div class="product-gallery">
+      <img class="product-main-img" src="assets/img/DSC_4870.jpg" alt="U|F vie004 Vienna Turquoise Necklace being worn">
+      <div class="thumbs">
+        <button class="thumb-btn active" data-src="assets/img/DSC_4870.jpg">
+          <img src="assets/img/DSC_4870.jpg" alt="Main view">
+        </button>
+        <button class="thumb-btn" data-src="assets/img/DSC_4955.jpg">
+          <img src="assets/img/DSC_4955.jpg" alt="Detail worn">
+        </button>
+        <button class="thumb-btn" data-src="assets/img/DSC_4961.jpg">
+          <img src="assets/img/DSC_4961.jpg" alt="Lifestyle">
+        </button>
+      </div>
+    </div>
+
+    <!-- Info -->
+    <div class="product-info">
+      <div class="product-eyebrow">Vienna · Necklace · One of one</div>
+      <div class="product-title">U|F vie004</div>
+      <div class="product-subtitle">Vienna Turquoise Necklace</div>
+      <div class="product-price-lg">€370</div>
+
+      <hr class="divider">
+
+      <button class="btn-primary" style="margin-bottom:10px;">Add to bag</button>
+      <p class="note-small">This is a one-of-one piece. Once sold, it cannot be remade.</p>
+
+      <hr class="divider">
+
+      <!-- Details -->
+      <div class="detail-row"><span class="detail-label">Origin</span><span class="detail-val">Vienna, Austria</span></div>
+      <div class="detail-row"><span class="detail-label">Fragment</span><span class="detail-val">Graffiti wall, original paint preserved</span></div>
+      <div class="detail-row"><span class="detail-label">Material</span><span class="detail-val">Sterling silver setting</span></div>
+      <div class="detail-row"><span class="detail-label">Colours</span><span class="detail-val">Turquoise, with natural variation</span></div>
+      <div class="detail-row"><span class="detail-label">Finish</span><span class="detail-val">Hand-polished</span></div>
+      <div class="detail-row"><span class="detail-label">Pendant length</span><span class="detail-val">Approx. 60cm (adjustable)</span></div>
+
+      <hr class="divider">
+
+      <!-- Accordion -->
+      <div class="accordion-item open">
+        <button class="accordion-trigger">About this fragment <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">
+          <div class="accordion-body-inner">
+            <p>This U|F vie004 is a unique piece from the URBAN FRAGMENTS collection, handcrafted from real graffiti collected in Vienna. This fragment captures a raw slice of urban expression transformed into wearable art.</p>
+            <p style="margin-top:10px;">Its vivid layering tells a visual story of the street it came from. Lightweight and expressive, it stands as both an accessory and a conversation piece. As each piece is made from real graffiti, no two are ever the same. You're holding a literal fragment of the city.</p>
+            <p class="note-small" style="margin-top:10px;">Comes without chain. Chain available separately.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-trigger">Shipping &amp; returns <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">
+          <div class="accordion-body-inner">
+            <p>We ship worldwide. Europe: 3–7 business days. International: 7–14 days. Free shipping on orders over €200 within Europe.</p>
+            <p style="margin-top:8px;">As this is a one-of-one piece, we cannot accept returns based on change of mind. See our full <a href="shipping.html">returns policy</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-trigger">Care guide <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">
+          <div class="accordion-body-inner">
+            <p>Keep away from water, perfume, and harsh chemicals. Clean gently with a soft dry cloth. Store separately to avoid scratching. The silver setting can be polished with a standard silver cloth.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ORIGIN STORY -->
+<div class="section section-linen">
+  <div class="container-sm" style="text-align:center;">
+    <div class="label label-rule label-centered" style="justify-content:center;margin-bottom:14px;">Where it came from</div>
+    <h2 style="margin-bottom:18px;">Reclaimed<br><em>from Vienna.</em></h2>
+    <p style="font-size:15px;color:var(--stone);line-height:1.8;margin-bottom:20px;">This piece was cut from a painted wall in Vienna's 7th district before demolition in 2023. The turquoise layers were part of a larger mural — this fragment carries the original paint exactly as it appeared on the wall. Nothing has been added.</p>
+    <span class="origin-tag">Vienna · 7th district · 2023</span>
+  </div>
+</div>
+
+<!-- YOU MAY ALSO LIKE -->
+<div class="section" style="background:var(--white);">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:32px;padding-bottom:20px;border-bottom:1px solid var(--line);">
+    <h2 style="font-size:28px;">You may also <em>like</em></h2>
+    <a href="collections.html" class="link-underline" style="font-size:11px;">View all →</a>
+  </div>
+  <div class="product-grid-3">
+    <a href="product.html" class="product-card">
+      <div class="product-img"><img src="assets/img/DSC_4955.jpg" alt="Berlin earrings"><span class="product-badge">1 of 1</span></div>
+      <div class="product-city">Berlin</div>
+      <div class="product-name">U|F brl013</div>
+      <div class="product-type">Earrings</div>
+      <div class="product-price">€370</div>
+    </a>
+    <a href="product.html" class="product-card">
+      <div class="product-img ph-turquoise"><span class="product-badge">1 of 1</span></div>
+      <div class="product-city">Vienna</div>
+      <div class="product-name">U|F vie006</div>
+      <div class="product-type">Ring</div>
+      <div class="product-price">€270</div>
+    </a>
+    <a href="product.html" class="product-card">
+      <div class="product-img ph-blue-yellow"><span class="product-badge">1 of 1</span></div>
+      <div class="product-city">Zürich</div>
+      <div class="product-name">U|F zh003</div>
+      <div class="product-type">Necklace</div>
+      <div class="product-price">€360</div>
+    </a>
+  </div>
+</div>
+
+<!-- NEWSLETTER -->
+<div class="newsletter-section">
+  <div class="newsletter-label">Stay close</div>
+  <h2 class="newsletter-title">New pieces, quietly.</h2>
+  <p class="newsletter-body">We release small drops when they're ready — not on a schedule.</p>
+  <div class="newsletter-form">
+    <input class="newsletter-input" type="email" placeholder="Your email address">
+    <button class="newsletter-submit">Subscribe</button>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">Urban Fragments</div>
+      <p class="footer-brand-desc">One-of-one jewellery made from reclaimed graffiti walls. A collection by Jasmine Hila Studios.</p>
+      <div class="footer-social"><a href="#">Instagram</a><a href="#">Pinterest</a></div>
+    </div>
+    <div>
+      <div class="footer-col-title">Shop</div>
+      <ul class="footer-links"><li><a href="collections.html">All pieces</a></li><li><a href="collections.html">Rings</a></li><li><a href="collections.html">Collar clips</a></li><li><a href="collections.html">Sold archive</a></li></ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Information</div>
+      <ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="process.html">The process</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Help</div>
+      <ul class="footer-links"><li><a href="shipping.html">Shipping &amp; returns</a></li><li><a href="faq.html">FAQ</a></li><li><a href="terms.html">Terms &amp; privacy</a></li></ul>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Jasmine Hila Studios. All rights reserved.</span><span>Powered by Shopify</span></div>
+</footer>
+<script src="assets/nav.js"></script>
+</body>
+</html>

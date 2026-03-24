@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Urban Fragments — Contact</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .contact-layout { display: grid; grid-template-columns: 3fr 2fr; gap: 64px; align-items: start; }
+  .contact-info { background: var(--linen); border-radius: var(--radius); padding: 32px; }
+  .info-section { padding: 16px 0; border-bottom: 1px solid var(--line); }
+  .info-section:last-child { border-bottom: none; padding-bottom: 0; }
+  .info-section:first-child { padding-top: 0; }
+  .info-label { font-size: 9.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--pebble); margin-bottom: 8px; }
+  .info-body { font-size: 13.5px; color: var(--stone); line-height: 1.75; font-weight: 300; }
+  .info-body a { color: var(--ink); border-bottom: 1px solid var(--line); }
+  @media (max-width: 768px) {
+    .contact-layout { grid-template-columns: 1fr; gap: 32px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="announcement"><strong>New drop —</strong> Fragment No. 014–018 now available.</div>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo">Urban Fragments <span>by Jasmine Hila Studios</span></a>
+  <ul class="nav-links">
+    <li><a href="collections.html">Shop</a></li>
+    <li><a href="collections.html">Collections</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="process.html">Process</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="#">Search</a>
+    <a href="#" class="nav-cart">Bag <span class="cart-count">0</span></a>
+  </div>
+  <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav-drawer">
+  <a href="collections.html">Shop</a>
+  <a href="collections.html">Collections</a>
+  <a href="about.html">About</a>
+  <a href="process.html">Process</a>
+  <a href="contact.html">Contact</a>
+  <div class="nav-drawer-sub"><a href="#">Search</a><a href="#" class="nav-cart">Bag (0)</a></div>
+</div>
+
+<!-- HERO -->
+<div class="page-hero section-linen">
+  <div class="label label-rule label-centered" style="justify-content:center;margin-bottom:14px;">Get in touch</div>
+  <h1>Contact us.</h1>
+  <p>Questions about a piece, stockist enquiries, or just want to say hello.</p>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="section" style="background:var(--white);">
+  <div class="contact-layout">
+
+    <!-- FORM -->
+    <div>
+      <div class="label label-rule" style="margin-bottom:20px;">Send us a message</div>
+      <form>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+          <div class="form-field">
+            <label class="form-label">First name</label>
+            <input class="form-input" type="text" placeholder="Your first name">
+          </div>
+          <div class="form-field">
+            <label class="form-label">Last name</label>
+            <input class="form-input" type="text" placeholder="Your last name">
+          </div>
+        </div>
+        <div class="form-field">
+          <label class="form-label">Email</label>
+          <input class="form-input" type="email" placeholder="your@email.com">
+        </div>
+        <div class="form-field">
+          <label class="form-label">Subject</label>
+          <select class="form-select">
+            <option value="">Select a subject</option>
+            <option>General enquiry</option>
+            <option>Order question</option>
+            <option>Wholesale / Stockists</option>
+            <option>Press &amp; media</option>
+            <option>Artist collaboration</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" rows="5" placeholder="Your message…"></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send message</button>
+        <p style="font-size:12px;color:var(--pebble);margin-top:12px;">We aim to reply within 2–3 business days.</p>
+      </form>
+    </div>
+
+    <!-- INFO -->
+    <div class="contact-info">
+      <div class="info-section">
+        <div class="info-label">Studio</div>
+        <p class="info-body">Jasmine Hila Studios is a small independent studio. We are a two-person team and aim to reply to all enquiries personally.</p>
+      </div>
+      <div class="info-section">
+        <div class="info-label">Email</div>
+        <p class="info-body"><a href="mailto:hello@urbanfragments.com">hello@urbanfragments.com</a></p>
+      </div>
+      <div class="info-section">
+        <div class="info-label">Instagram</div>
+        <p class="info-body"><a href="#">@urbanfragments</a></p>
+      </div>
+      <div class="info-section">
+        <div class="info-label">Stockists</div>
+        <p class="info-body">Urban Fragments pieces are available at selected stockists across Europe. If you are interested in carrying the collection, please use the form with subject 'Wholesale / Stockists'.</p>
+      </div>
+      <div class="info-section">
+        <div class="info-label">Press &amp; media</div>
+        <p class="info-body">For press enquiries, lookbook images, and interview requests, please use the form with subject 'Press &amp; media'.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="section section-linen" style="text-align:center;">
+  <div class="container-sm">
+    <p style="font-family:var(--font-serif);font-size:26px;font-style:italic;color:var(--ink);margin-bottom:10px;">Browse the current archive.</p>
+    <p style="font-size:14px;color:var(--stone);margin-bottom:24px;">All available pieces are listed in the shop. Each is one-of-one.</p>
+    <a href="collections.html" class="btn-outline" style="width:auto;display:inline-flex;padding:13px 32px;">View all pieces →</a>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">Urban Fragments</div>
+      <p class="footer-brand-desc">One-of-one jewellery made from reclaimed graffiti walls. A collection by Jasmine Hila Studios.</p>
+      <div class="footer-social"><a href="#">Instagram</a><a href="#">Pinterest</a></div>
+    </div>
+    <div>
+      <div class="footer-col-title">Shop</div>
+      <ul class="footer-links"><li><a href="collections.html">All pieces</a></li><li><a href="collections.html">Rings</a></li><li><a href="collections.html">Collar clips</a></li><li><a href="collections.html">Sold archive</a></li></ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Information</div>
+      <ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="process.html">The process</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Help</div>
+      <ul class="footer-links"><li><a href="shipping.html">Shipping &amp; returns</a></li><li><a href="faq.html">FAQ</a></li><li><a href="terms.html">Terms &amp; privacy</a></li></ul>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Jasmine Hila Studios. All rights reserved.</span><span>Powered by Shopify</span></div>
+</footer>
+<script src="assets/nav.js"></script>
+</body>
+</html>

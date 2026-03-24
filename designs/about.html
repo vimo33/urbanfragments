@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Urban Fragments — About</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .cities-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-top: 1px solid var(--line); margin-top: 32px; }
+  .city-item { padding: 18px 0; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line); padding-right: 32px; }
+  .city-item:nth-child(even) { padding-right: 0; padding-left: 32px; border-right: none; }
+  .city-name { font-family: var(--font-serif); font-size: 22px; color: var(--ink); }
+  .city-country { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--pebble); margin-top: 3px; }
+  .img-full { width: 100%; aspect-ratio: 21/9; object-fit: cover; object-position: center; display: block; }
+  .step-inline { display: flex; gap: 14px; align-items: baseline; padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .step-inline:last-child { border-bottom: none; }
+  .step-n { font-family: var(--font-serif); font-style: italic; color: var(--pebble); font-size: 13px; min-width: 20px; }
+  .step-t { font-size: 14px; color: var(--ink); font-weight: 400; }
+  .step-t span { color: var(--stone); font-weight: 300; }
+  @media (max-width: 768px) {
+    .cities-grid { grid-template-columns: 1fr; }
+    .city-item, .city-item:nth-child(even) { padding: 14px 0; border-right: none; padding-left: 0; padding-right: 0; }
+    .img-full { aspect-ratio: 4/3; }
+  }
+</style>
+</head>
+<body>
+
+<div class="announcement"><strong>New drop —</strong> Fragment No. 014–018 now available.</div>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo">Urban Fragments <span>by Jasmine Hila Studios</span></a>
+  <ul class="nav-links">
+    <li><a href="collections.html">Shop</a></li>
+    <li><a href="collections.html">Collections</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="process.html">Process</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="#">Search</a>
+    <a href="#" class="nav-cart">Bag <span class="cart-count">0</span></a>
+  </div>
+  <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav-drawer">
+  <a href="collections.html">Shop</a>
+  <a href="collections.html">Collections</a>
+  <a href="about.html">About</a>
+  <a href="process.html">Process</a>
+  <a href="contact.html">Contact</a>
+  <div class="nav-drawer-sub"><a href="#">Search</a><a href="#" class="nav-cart">Bag (0)</a></div>
+</div>
+
+<!-- HERO -->
+<div class="page-hero section-linen">
+  <div class="label label-rule label-centered" style="justify-content:center;margin-bottom:14px;">About</div>
+  <h1>The city<br><em>as material.</em></h1>
+</div>
+
+<!-- OPENING -->
+<div class="section" style="background:var(--white);">
+  <div class="container">
+    <div class="split-2">
+      <div>
+        <div class="label label-rule" style="margin-bottom:14px;">Urban Fragments</div>
+        <h2 style="margin-bottom:20px;">Every city has<br>something worth<br><em>keeping.</em></h2>
+        <p style="font-size:15px;color:var(--stone);margin-bottom:16px;">Urban Fragments is a jewellery collection that starts with a wall. We document painted surfaces across European cities — Basel, Berlin, Cologne, Ibiza, Leipzig, Lisbon, Luzern, Nuremberg, Vienna, Zürich — and reclaim fragments before they are demolished or painted over.</p>
+        <p style="font-size:15px;color:var(--stone);margin-bottom:16px;">The fragment is set by hand into a piece of jewellery. The paint is original. Nothing is added.</p>
+        <p style="font-size:15px;color:var(--stone);margin-bottom:28px;">Each piece is one-of-one. When a fragment is gone, it cannot be remade.</p>
+        <a href="process.html" class="link-underline">Learn about the process →</a>
+      </div>
+      <div style="border-radius:2px;overflow:hidden;background:var(--sand);">
+        <img src="assets/img/DSC_4961.jpg" alt="Couple wearing Urban Fragments jewellery in front of a graffiti wall" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;min-height:360px;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STUDIO -->
+<div class="section section-linen">
+  <div class="container">
+    <div class="split-2">
+      <div style="border-radius:2px;overflow:hidden;background:var(--sand);">
+        <img src="assets/img/DSC_4955.jpg" alt="Detail of Urban Fragments pieces being worn" style="width:100%;height:100%;object-fit:cover;display:block;min-height:360px;">
+      </div>
+      <div style="display:flex;flex-direction:column;justify-content:center;">
+        <div class="label label-rule" style="margin-bottom:14px;">Jasmine Hila Studios</div>
+        <h2 style="margin-bottom:20px;">Made under<br><em>one roof.</em></h2>
+        <p style="font-size:15px;color:var(--stone);margin-bottom:16px;">Urban Fragments is one of three collections made under Jasmine Hila Studios. Each collection begins with a material that would otherwise disappear — a wall, a surface, a found object — and transforms it into something worn and kept.</p>
+        <p style="font-size:15px;color:var(--stone);margin-bottom:28px;">The studio works in small runs, without repeating itself. No piece is ever made twice. Urban Fragments is the first collection. Two more are in progress.</p>
+        <a href="contact.html" class="link-underline">Get in touch →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CITIES -->
+<div class="section" style="background:var(--white);">
+  <div class="container">
+    <div class="label label-rule" style="margin-bottom:10px;">Where we collect</div>
+    <h2 style="margin-bottom:8px;">Ten cities.<br><em>One collection.</em></h2>
+    <p style="font-size:14px;color:var(--stone);max-width:480px;margin-bottom:0;">We have collected fragments from painted walls across Europe. Each city brings its own visual language to the collection.</p>
+    <div class="cities-grid">
+      <div class="city-item"><div class="city-name">Basel</div><div class="city-country">Switzerland</div></div>
+      <div class="city-item"><div class="city-name">Berlin</div><div class="city-country">Germany</div></div>
+      <div class="city-item"><div class="city-name">Cologne</div><div class="city-country">Germany</div></div>
+      <div class="city-item"><div class="city-name">Ibiza</div><div class="city-country">Spain</div></div>
+      <div class="city-item"><div class="city-name">Leipzig</div><div class="city-country">Germany</div></div>
+      <div class="city-item"><div class="city-name">Lisbon</div><div class="city-country">Portugal</div></div>
+      <div class="city-item"><div class="city-name">Luzern</div><div class="city-country">Switzerland</div></div>
+      <div class="city-item"><div class="city-name">Nuremberg</div><div class="city-country">Germany</div></div>
+      <div class="city-item"><div class="city-name">Vienna</div><div class="city-country">Austria</div></div>
+      <div class="city-item"><div class="city-name">Zürich</div><div class="city-country">Switzerland</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- PROCESS -->
+<div class="section section-linen">
+  <div class="container">
+    <div class="split-2">
+      <div style="border-radius:2px;overflow:hidden;background:var(--sand);">
+        <img src="assets/img/DSC04628.JPG" alt="Hands against a graffiti mural — the source of Urban Fragments jewellery" style="width:100%;height:100%;object-fit:cover;display:block;min-height:360px;">
+      </div>
+      <div style="display:flex;flex-direction:column;justify-content:center;">
+        <div class="label label-rule" style="margin-bottom:14px;">How it works</div>
+        <h2 style="margin-bottom:20px;">From wall<br><em>to wrist.</em></h2>
+        <p style="font-size:14.5px;color:var(--stone);margin-bottom:24px;font-weight:300;">Every piece starts with the wall. We identify painted surfaces before demolition, carefully reclaim the fragment, set it by hand in our studio, and ship it with a full certificate of origin.</p>
+        <div style="border-top:1px solid var(--line);margin-bottom:4px;"></div>
+        <div class="step-inline"><span class="step-n">01</span><span class="step-t">Document <span>— photograph and catalogue every wall</span></span></div>
+        <div class="step-inline"><span class="step-n">02</span><span class="step-t">Reclaim <span>— remove the fragment, preserve the paint</span></span></div>
+        <div class="step-inline"><span class="step-n">03</span><span class="step-t">Set by hand <span>— cut, finish, mount in sterling silver</span></span></div>
+        <div class="step-inline"><span class="step-n">04</span><span class="step-t">Certify <span>— origin card ships with every piece</span></span></div>
+        <a href="process.html" class="link-underline" style="margin-top:28px;">Read the full story →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PHOTO ROW -->
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0;">
+  <img src="assets/img/DSC04308.JPG" alt="Fragment ring against orange painted wall" style="width:100%;aspect-ratio:1;object-fit:cover;display:block;">
+  <img src="assets/img/DSC04288.JPG" alt="Fragment ring against cobalt blue surface" style="width:100%;aspect-ratio:1;object-fit:cover;display:block;">
+  <img src="assets/img/DSC_4870.jpg" alt="Woman wearing Urban Fragments turquoise jewellery" style="width:100%;aspect-ratio:1;object-fit:cover;object-position:top;display:block;">
+</div>
+
+<!-- CTA -->
+<div class="section section-ink" style="text-align:center;">
+  <div class="container-sm">
+    <p style="font-family:var(--font-serif);font-size:clamp(24px,3vw,36px);font-style:italic;color:var(--paper);margin-bottom:12px;">Start with the archive.</p>
+    <p style="font-size:14px;color:rgba(255,255,255,0.45);margin-bottom:28px;">Browse all available pieces. Each one is unique.</p>
+    <a href="collections.html" class="btn-light" style="display:inline-flex;width:auto;padding:13px 32px;">Shop all pieces →</a>
+  </div>
+</div>
+
+<!-- NEWSLETTER -->
+<div class="newsletter-section">
+  <div class="newsletter-label">Stay close</div>
+  <h2 class="newsletter-title">New pieces, quietly.</h2>
+  <p class="newsletter-body">We release small drops when they're ready — not on a schedule.<br>Join the list to hear first.</p>
+  <div class="newsletter-form">
+    <input class="newsletter-input" type="email" placeholder="Your email address">
+    <button class="newsletter-submit">Subscribe</button>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">Urban Fragments</div>
+      <p class="footer-brand-desc">One-of-one jewellery made from reclaimed graffiti walls. A collection by Jasmine Hila Studios.</p>
+      <div class="footer-social"><a href="#">Instagram</a><a href="#">Pinterest</a></div>
+    </div>
+    <div>
+      <div class="footer-col-title">Shop</div>
+      <ul class="footer-links"><li><a href="collections.html">All pieces</a></li><li><a href="collections.html">Rings</a></li><li><a href="collections.html">Collar clips</a></li><li><a href="collections.html">Sold archive</a></li></ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Information</div>
+      <ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="process.html">The process</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Help</div>
+      <ul class="footer-links"><li><a href="shipping.html">Shipping &amp; returns</a></li><li><a href="faq.html">FAQ</a></li><li><a href="terms.html">Terms &amp; privacy</a></li></ul>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Jasmine Hila Studios. All rights reserved.</span><span>Powered by Shopify</span></div>
+</footer>
+<script src="assets/nav.js"></script>
+</body>
+</html>

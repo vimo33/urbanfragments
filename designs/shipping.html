@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Urban Fragments — Shipping &amp; Returns</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .shipping-table { width: 100%; border-collapse: collapse; margin-top: 24px; font-size: 14px; }
+  .shipping-table th { font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--pebble); padding: 10px 16px; text-align: left; border-bottom: 1px solid var(--line-md); font-weight: 400; background: var(--white); }
+  .shipping-table td { padding: 14px 16px; border-bottom: 1px solid var(--line); color: var(--stone); font-weight: 300; vertical-align: top; }
+  .shipping-table tr:nth-child(even) td { background: var(--linen); }
+  .shipping-table td:first-child { color: var(--ink); font-weight: 400; }
+  .shipping-table td:last-child { color: var(--ink); font-weight: 400; white-space: nowrap; }
+  .shipping-note { font-size: 12.5px; color: var(--stone); margin-top: 14px; font-style: italic; }
+  .packaging-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+  .packaging-img { border-radius: var(--radius); overflow: hidden; aspect-ratio: 4/5; }
+  .packaging-img img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+  @media (max-width: 768px) {
+    .packaging-layout { grid-template-columns: 1fr; gap: 28px; }
+    .shipping-table th, .shipping-table td { padding: 10px 8px; }
+    .shipping-table th:nth-child(2), .shipping-table td:nth-child(2) { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="announcement"><strong>New drop —</strong> Fragment No. 014–018 now available.</div>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo">Urban Fragments <span>by Jasmine Hila Studios</span></a>
+  <ul class="nav-links">
+    <li><a href="collections.html">Shop</a></li>
+    <li><a href="collections.html">Collections</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="process.html">Process</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="#">Search</a>
+    <a href="#" class="nav-cart">Bag <span class="cart-count">0</span></a>
+  </div>
+  <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav-drawer">
+  <a href="collections.html">Shop</a>
+  <a href="collections.html">Collections</a>
+  <a href="about.html">About</a>
+  <a href="process.html">Process</a>
+  <a href="contact.html">Contact</a>
+  <div class="nav-drawer-sub"><a href="#">Search</a><a href="#" class="nav-cart">Bag (0)</a></div>
+</div>
+
+<div class="page-hero section-linen">
+  <div class="label label-rule label-centered" style="justify-content:center;margin-bottom:14px;">Orders</div>
+  <h1>Shipping &amp;<br><em>returns.</em></h1>
+  <p>We ship worldwide from our studio. Every order is packed by hand.</p>
+</div>
+
+<!-- SHIPPING RATES -->
+<div class="section" style="background:var(--white);">
+  <div class="container">
+    <div class="label label-rule" style="margin-bottom:10px;">Shipping</div>
+    <h2 style="margin-bottom:12px;">Where we ship.</h2>
+    <p style="font-size:14.5px;color:var(--stone);max-width:600px;margin-bottom:4px;">We ship from our studio to most countries worldwide. All orders are dispatched within 2 business days of payment confirmation. You will receive tracking information by email once your order ships.</p>
+    <table class="shipping-table">
+      <thead>
+        <tr>
+          <th>Region</th>
+          <th>Service</th>
+          <th>Estimated delivery</th>
+          <th>Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Switzerland</td><td>Standard</td><td>1–3 business days</td><td>CHF 7</td></tr>
+        <tr><td>Switzerland</td><td>Express</td><td>Next business day</td><td>CHF 18</td></tr>
+        <tr><td>Europe (EU)</td><td>Standard</td><td>3–7 business days</td><td>€9</td></tr>
+        <tr><td>Europe (EU)</td><td>Express</td><td>2–3 business days</td><td>€22</td></tr>
+        <tr><td>United Kingdom</td><td>Standard</td><td>5–8 business days</td><td>£12</td></tr>
+        <tr><td>USA &amp; Canada</td><td>Standard</td><td>7–12 business days</td><td>$18</td></tr>
+        <tr><td>Rest of world</td><td>Standard</td><td>10–16 business days</td><td>€24</td></tr>
+      </tbody>
+    </table>
+    <p class="shipping-note">Free shipping on orders over €200 within Europe.</p>
+  </div>
+</div>
+
+<!-- PACKAGING -->
+<div class="section section-linen">
+  <div class="container">
+    <div class="packaging-layout">
+      <div class="packaging-img">
+        <img src="assets/img/DSC_4966.jpg" alt="Urban Fragments collar clips — careful presentation">
+      </div>
+      <div>
+        <div class="label label-rule" style="margin-bottom:14px;">Packaging</div>
+        <h2 style="margin-bottom:18px;">Packed with<br><em>care.</em></h2>
+        <p style="font-size:14.5px;color:var(--stone);line-height:1.8;margin-bottom:14px;">Each piece ships in a small rigid box with tissue paper and a ribbon. Inside you will find the piece itself, a certificate of origin card detailing the wall it came from, and a care guide.</p>
+        <p style="font-size:14.5px;color:var(--stone);line-height:1.8;">The outer packaging is plain and discreet — ideal as a gift. You can add a personalised message at checkout at no extra charge.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RETURNS -->
+<div class="section" style="background:var(--white);">
+  <div class="container" style="max-width:760px;">
+    <div class="label label-rule" style="margin-bottom:10px;">Returns</div>
+    <h2 style="margin-bottom:28px;">Our returns policy.</h2>
+    <div class="policy-body">
+      <h2>Can I return my order?</h2>
+      <p>Because each Urban Fragments piece is genuinely one-of-one, we are not able to accept returns based on a change of mind. We ask you to consider your purchase carefully before completing the order. The product page photographs and descriptions are provided in good faith to represent each piece as accurately as possible.</p>
+      <h2>Damaged or incorrect items</h2>
+      <p>If your piece arrives damaged or is not as described on the product page, please contact us at <a href="mailto:hello@urbanfragments.com">hello@urbanfragments.com</a> within 7 days of receipt with your order number and photographs of the issue. We will arrange a replacement or full refund at no cost to you.</p>
+      <h2>How to start a return</h2>
+      <p>Email <a href="mailto:hello@urbanfragments.com">hello@urbanfragments.com</a> with the subject line <em>Return request — [your order number]</em>. Do not return items without contacting us first. Unauthorised returns will not be accepted.</p>
+      <h2>Refund timeline</h2>
+      <p>Once we receive and inspect the returned item, refunds are processed within 5 business days to your original payment method. You will receive an email confirmation once the refund has been issued.</p>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ LINKS -->
+<div class="section section-linen" style="text-align:center;">
+  <div class="container-sm">
+    <p style="font-size:15px;color:var(--stone);margin-bottom:20px;">More questions about your order?</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a href="faq.html" class="btn-outline" style="width:auto;display:inline-flex;padding:12px 28px;">See FAQ →</a>
+      <a href="contact.html" class="btn-outline" style="width:auto;display:inline-flex;padding:12px 28px;">Contact us →</a>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">Urban Fragments</div>
+      <p class="footer-brand-desc">One-of-one jewellery made from reclaimed graffiti walls. A collection by Jasmine Hila Studios.</p>
+      <div class="footer-social"><a href="#">Instagram</a><a href="#">Pinterest</a></div>
+    </div>
+    <div>
+      <div class="footer-col-title">Shop</div>
+      <ul class="footer-links"><li><a href="collections.html">All pieces</a></li><li><a href="collections.html">Rings</a></li><li><a href="collections.html">Collar clips</a></li><li><a href="collections.html">Sold archive</a></li></ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Information</div>
+      <ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="process.html">The process</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Help</div>
+      <ul class="footer-links"><li><a href="shipping.html">Shipping &amp; returns</a></li><li><a href="faq.html">FAQ</a></li><li><a href="terms.html">Terms &amp; privacy</a></li></ul>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Jasmine Hila Studios. All rights reserved.</span><span>Powered by Shopify</span></div>
+</footer>
+<script src="assets/nav.js"></script>
+</body>
+</html>
