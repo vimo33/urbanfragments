@@ -137,6 +137,19 @@
       min-height: 480px;
     }
 
+    /* ── 5-col home product grid ── */
+    .product-grid-home {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+    }
+    @media (max-width: 1024px) {
+      .product-grid-home { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .product-grid-home { grid-template-columns: repeat(2, 1fr); }
+    }
+
     /* ── RESPONSIVE: mobile hero ── */
     @media (max-width: 768px) {
       .home-hero {
@@ -293,43 +306,65 @@
         <a href="collections.html" class="link-underline">View all →</a>
       </div>
 
-      <div class="product-grid-3">
+      <div class="product-grid-home">
 
-        <!-- Product 1 -->
-        <div class="product-card">
+        <!-- Ring -->
+        <a href="product.html" class="product-card">
           <div class="product-img">
-            <img src="assets/img/DSC04308.JPG" alt="Fragment No. 004 — warm terracotta mural ring">
+            <img src="assets/img/DSC_5086.jpg" alt="U|F brl005 — Berlin ring">
             <span class="product-badge">1 of 1</span>
           </div>
-          <div class="product-city">Mexico City · 2022</div>
-          <div class="product-name">Fragment No. 004</div>
-          <div class="product-type">Warm terracotta mural</div>
-          <div class="product-price">€285</div>
-        </div>
+          <div class="product-city">Berlin</div>
+          <div class="product-name">U|F brl005</div>
+          <div class="product-type">Ring</div>
+          <div class="product-price">€300</div>
+        </a>
 
-        <!-- Product 2 -->
-        <div class="product-card">
-          <div class="product-img">
-            <img src="assets/img/DSC04288.JPG" alt="Fragment No. 002 — deep cobalt surface ring">
+        <!-- Pendant -->
+        <a href="product.html" class="product-card">
+          <div class="product-img ph-brown-orange">
             <span class="product-badge">1 of 1</span>
           </div>
-          <div class="product-city">Brooklyn · 2021</div>
-          <div class="product-name">Fragment No. 002</div>
-          <div class="product-type">Deep cobalt surface</div>
-          <div class="product-price">€320</div>
-        </div>
+          <div class="product-city">Lisbon</div>
+          <div class="product-name">U|F lis004</div>
+          <div class="product-type">Pendant</div>
+          <div class="product-price">€220</div>
+        </a>
 
-        <!-- Product 3 -->
-        <div class="product-card">
+        <!-- Necklace -->
+        <a href="product.html" class="product-card">
           <div class="product-img">
-            <img src="assets/img/DSC_5086.jpg" alt="Fragment No. 007 — vivid mural ring">
-            <span class="product-badge sold">Sold</span>
+            <img src="assets/img/DSC_4870.jpg" alt="U|F vie004 — Vienna turquoise necklace">
+            <span class="product-badge">1 of 1</span>
           </div>
-          <div class="product-city">East LA · 2020</div>
-          <div class="product-name">Fragment No. 007</div>
-          <div class="product-type">Vivid mural</div>
-          <div class="product-price sold">Sold out</div>
-        </div>
+          <div class="product-city">Vienna</div>
+          <div class="product-name">U|F vie004</div>
+          <div class="product-type">Necklace</div>
+          <div class="product-price">€370</div>
+        </a>
+
+        <!-- Earrings -->
+        <a href="product.html" class="product-card">
+          <div class="product-img">
+            <img src="assets/img/DSC_4955.jpg" alt="U|F brl013 — Berlin earrings">
+            <span class="product-badge">1 of 1</span>
+          </div>
+          <div class="product-city">Berlin</div>
+          <div class="product-name">U|F brl013</div>
+          <div class="product-type">Earrings</div>
+          <div class="product-price">€370</div>
+        </a>
+
+        <!-- Brooch -->
+        <a href="product.html" class="product-card">
+          <div class="product-img ph-beige-pink">
+            <span class="product-badge">1 of 1</span>
+          </div>
+          <div class="product-city">Ibiza</div>
+          <div class="product-name">U|F ibz003</div>
+          <div class="product-type">Brooch</div>
+          <div class="product-price">€260</div>
+        </a>
 
       </div>
     </div>
