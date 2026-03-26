@@ -8,9 +8,15 @@
 <style>
   .collections-header { padding: 48px 40px 32px; background: var(--white); border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: flex-end; }
   .count-num { font-family: var(--font-serif); font-size: 72px; font-style: italic; color: var(--linen); line-height: 1; }
+  /* Expanded filter bar */
+  .filter-bar-expanded { flex-direction: column; align-items: stretch; gap: 0; padding: 0; }
+  .filter-row { display: flex; align-items: center; flex-wrap: wrap; gap: 0; padding: 10px 40px; border-bottom: 1px solid var(--line); overflow-x: auto; }
+  .filter-row:last-child { border-bottom: none; }
+  .filter-row-secondary { background: var(--paper); }
   @media (max-width: 768px) {
     .collections-header { padding: 32px 20px 24px; }
     .count-num { display: none; }
+    .filter-row { padding: 10px 20px; }
   }
 </style>
 </head>
@@ -19,10 +25,9 @@
 <div class="announcement"><strong>New drop —</strong> Fragment No. 014–018 now available.</div>
 
 <nav class="site-nav">
-  <a href="index.html" class="nav-logo">Urban Fragments <span>by Jasmine Hila Studios</span></a>
+  <a href="index.html" class="nav-logo">Jasmine Hila Studios <span>Urban Fragments</span></a>
   <ul class="nav-links">
     <li><a href="collections.html" class="active">Shop</a></li>
-    <li><a href="collections.html">Collections</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="process.html">Process</a></li>
   </ul>
@@ -34,7 +39,6 @@
 </nav>
 <div class="nav-drawer">
   <a href="collections.html">Shop</a>
-  <a href="collections.html">Collections</a>
   <a href="about.html">About</a>
   <a href="process.html">Process</a>
   <a href="contact.html">Contact</a>
@@ -52,29 +56,69 @@
 </div>
 
 <!-- FILTERS -->
-<div class="filter-bar">
-  <div class="filter-group">
-    <span class="filter-label-sm">Type</span>
-    <button class="filter-pill active">All</button>
-    <button class="filter-pill">Rings</button>
-    <button class="filter-pill">Pendants</button>
-    <button class="filter-pill">Necklaces</button>
-    <button class="filter-pill">Earrings</button>
-    <button class="filter-pill">Brooches</button>
+<div class="filter-bar filter-bar-expanded">
+  <!-- Row 1: Type · Price · Colour -->
+  <div class="filter-row">
+    <div class="filter-group">
+      <span class="filter-label-sm">Type</span>
+      <button class="filter-pill active">All</button>
+      <button class="filter-pill">Rings</button>
+      <button class="filter-pill">Pendants</button>
+      <button class="filter-pill">Necklaces</button>
+      <button class="filter-pill">Earrings</button>
+      <button class="filter-pill">Brooches</button>
+    </div>
+    <div class="filter-sep"></div>
+    <div class="filter-group">
+      <span class="filter-label-sm">Price</span>
+      <button class="filter-pill active">All</button>
+      <button class="filter-pill">Under €200</button>
+      <button class="filter-pill">€200–€300</button>
+      <button class="filter-pill">€300+</button>
+    </div>
+    <div class="filter-sep"></div>
+    <div class="filter-group">
+      <span class="filter-label-sm">Colour</span>
+      <button class="filter-pill active">All</button>
+      <button class="filter-pill">Turquoise</button>
+      <button class="filter-pill">Orange / Red</button>
+      <button class="filter-pill">Blue</button>
+      <button class="filter-pill">Pink</button>
+      <button class="filter-pill">Violet</button>
+      <button class="filter-pill">Green</button>
+      <button class="filter-pill">Gold</button>
+      <button class="filter-pill">Beige</button>
+    </div>
   </div>
-  <div class="filter-sep"></div>
-  <div class="filter-group">
-    <span class="filter-label-sm">City</span>
-    <button class="filter-pill active">All</button>
-    <button class="filter-pill">Basel</button>
-    <button class="filter-pill">Berlin</button>
-    <button class="filter-pill">Cologne</button>
-    <button class="filter-pill">Ibiza</button>
-    <button class="filter-pill">Leipzig</button>
-    <button class="filter-pill">Lisbon</button>
-    <button class="filter-pill">Luzern</button>
-    <button class="filter-pill">Vienna</button>
-    <button class="filter-pill">Zürich</button>
+  <!-- Row 2: Finish · Style · City -->
+  <div class="filter-row filter-row-secondary">
+    <div class="filter-group">
+      <span class="filter-label-sm">Finish</span>
+      <button class="filter-pill active">All</button>
+      <button class="filter-pill">Gold plated</button>
+      <button class="filter-pill">Standard silver</button>
+    </div>
+    <div class="filter-sep"></div>
+    <div class="filter-group">
+      <span class="filter-label-sm">Style</span>
+      <button class="filter-pill active">All</button>
+      <button class="filter-pill">Poison ring</button>
+      <button class="filter-pill">Standard</button>
+    </div>
+    <div class="filter-sep"></div>
+    <div class="filter-group">
+      <span class="filter-label-sm">Origin city</span>
+      <button class="filter-pill active">All</button>
+      <button class="filter-pill">Basel</button>
+      <button class="filter-pill">Berlin</button>
+      <button class="filter-pill">Cologne</button>
+      <button class="filter-pill">Ibiza</button>
+      <button class="filter-pill">Leipzig</button>
+      <button class="filter-pill">Lisbon</button>
+      <button class="filter-pill">Luzern</button>
+      <button class="filter-pill">Vienna</button>
+      <button class="filter-pill">Zürich</button>
+    </div>
   </div>
 </div>
 

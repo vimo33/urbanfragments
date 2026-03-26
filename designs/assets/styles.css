@@ -558,3 +558,6 @@ p { line-height: 1.75; }
 
 /* ── NAV SCRIPT HELPERS ── */
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border-width: 0; }
+
+/* ── DEV UTILITIES ── */
+.copy-placeholder { background: #fffacc; border: 1px dashed #ccb800; padding: 8px 14px; font-size: 12px; font-family: var(--font-sans); color: #665a00; border-radius: 2px; margin-bottom: 14px; font-style: normal; }
